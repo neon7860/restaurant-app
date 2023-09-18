@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+main{
+    padding-top: 25px;    
+}
+
+/* HEADER */
+
+header{
+    background-image: url('/images/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: white;
+}
+
+h1{
+    font-size: 39px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 22.42px;
+    line-height: 13.8px;
+    font-weight: 100;
+}
+
+/* MENU */
+
+.menu-item{
+    display: flex;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid #D2D2D2;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.menu-info{
+    padding-left: 20px;
+    /* border: 1px solid blue; */
+}
+
+p{
+    color: #8B8B8B;
+}
+
+.btn-addItem{
+    margin-left: auto;
+    border-radius: 28px;
+    border: 2px solid #DEDEDE;
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.emoji{
+    font-size: 77px;
+    width: 100px;
+}
+
+/* CHECKOUT */
+
+.checkout-items{
+    /* border: 1px solid blue; */
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.item{
+    /* border: 1px solid green; */
+    width: 300px;
+    display: flex;
+}
+
+.delete-item{
+    margin: 0;
+    padding-left: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.total{
+    border-top: 2px solid black;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.price{
+    width: 300px;
+    text-align: right;
+}
+
+.order-title{
+    font-size: 28px;
+    text-align: center;
+}
+
+button{
+    color: #fff;
+    background-color: #16DB99;
+    width: 600px;
+    height: 60px;
+    border: none;
+    font-family: Verdana;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+.completeOrder-btn-container{
+    padding: 35px 0;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Payment */
+
+.pay-container{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 5.186544418334961px 5.186544418334961px 255.43731689453125px 0px #00000080;
+    background-color: white;
+}
+
+.pay-inner{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pay-title{
+    font-family: Verdana;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.pay-inner input{
+    width: 294px;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-indent: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.pay-btn{
+    color: #fff;
+    background-color: #16DB99;
+    border: none;
+    font-family: Verdana;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.confirmation-message{
+    text-align: center;
+    font-size: 32px;
+    color: #065F46;
+    padding: 25px;
+    background-color: #ECFDF5;
+    width: 550px;
+    margin: 40px auto;
+}
+
+/* Utility */
+
+.hidden{
+    display: none;
+}

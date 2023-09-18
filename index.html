@@ -1,0 +1,65 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy’s Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </header>
+        <main>
+            <div id="pay-container" class="pay-container hidden">
+                <div class="pay-inner">
+                    <h3 class="pay-title">Enter card details</h3>
+                    <form id="pay-form">
+                        <input
+                        type="text"
+                        name="fullName"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                        >
+                        
+                        <input
+                        type="text"
+                        name="cardNumber"
+                        placeholder="Enter your card number"
+                        required
+                        >
+                        
+                        <input
+                        type="text"
+                        name="cardNumber"
+                        placeholder="Enter CVV"
+                        required
+                        >
+                        
+                        <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <div class="menu-item-list" id="menu-item-list">
+                <!-- menu list here -->
+            </div>
+            
+            <div id="checkout-container" class="checkout-container hidden">
+                <h3 class="order-title">Your order</h3>
+                <div id="checkout" class="checkout">
+                    <!-- add checkout item list here -->
+                </div>
+                <div class="checkout-items total">
+                        <div class="item">Total Price</div>
+                        <div id="price" class="price">£0</div>
+                    </div>
+                    <div class="completeOrder-btn-container">
+                        <button id="submit-order">Complete order</button>
+                    </div>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
