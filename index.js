@@ -1,4 +1,5 @@
 import { menuArray } from '/data.js'
+import loading from '/images/loading.svg'
 
 const menuItemList = document.getElementById('menu-item-list')
 const checkout = document.getElementById('checkout')
@@ -24,10 +25,8 @@ document.addEventListener('click', function(e){
 function confirmationMessage(){
     const name = document.getElementById('name').value
     document.getElementById('pay-form').innerHTML = `
-    <div>
-    <img src="/images/loading.svg">
-    </div>
-    `
+    <img src="${loading}">`
+    
     setTimeout(function(){
         document.getElementById('pay-container').classList.add('hidden')
          document.getElementById('checkout-container').innerHTML = `
