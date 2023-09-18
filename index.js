@@ -26,7 +26,6 @@ function confirmationMessage(){
     const name = document.getElementById('name').value
     document.getElementById('pay-form').innerHTML = `
     <img src="${loading}">`
-    
     setTimeout(function(){
         document.getElementById('pay-container').classList.add('hidden')
          document.getElementById('checkout-container').innerHTML = `
