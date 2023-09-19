@@ -4,6 +4,7 @@ import loading from '/images/loading.svg'
 const menuItemList = document.getElementById('menu-item-list')
 const checkout = document.getElementById('checkout')
 const totalPrice = document.getElementById('price')
+const payForm = document.getElementById('pay-form')
 const itemObjArr = []
 
 document.addEventListener('click', function(e){
@@ -17,10 +18,9 @@ document.addEventListener('click', function(e){
     else if (e.target.id === "submit-order"){
         submitOrder()
     }
-    else if (e.target.id === "pay-btn"){
-        confirmationMessage()
-    }
 })
+
+payForm.addEventListener("submit", confirmationMessage)
 
 function confirmationMessage(){
     const name = document.getElementById('name').value
