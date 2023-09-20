@@ -17,12 +17,11 @@ document.addEventListener('click', function(e){
     else if (e.target.id === "submit-order"){
         submitOrder()
     }
-    else if (e.target.id === "pay-btn"){
-        confirmationMessage()
-    }
 })
 
-function confirmationMessage(){
+payForm.addEventListener("submit", confirmationMessage)
+
+function confirmationMessage(e){
     const name = document.getElementById('name').value
     document.getElementById('pay-form').innerHTML = `
     <img src="${loading}">`
@@ -32,6 +31,7 @@ function confirmationMessage(){
         <h3 class="confirmation-message">Thanks ${name}! Your order is on its way!</h3>
         `
     }, 1500)
+    e.preventDefault();
 }
 
 function submitOrder(){
